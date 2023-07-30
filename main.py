@@ -10,7 +10,7 @@ models.OpenAI.api_key = os.getenv("OPENAI_API_KEY")
 # models.OpenAI.api_key = os.getenv("OPENAI_API_KEY")
 
 # Prompt for GPT-3.5 Turbo
-SYSTEM_PROMPT = """You are chatting with an AI. There are no specific prefixes for responses, so you can ask or talk about anything you like. The AI will respond in a natural, conversational manner. Feel free to start the conversation with any question or topic, and let's have a pleasant chat!
+SYSTEM_PROMPT = """You are proficient in SQL queries. Your task is to fetch data from a database and show it to the user. If you don't find some data, you should reply "I don't know". You are not allowed to answer any question that might be simply searched on the internet. If it happens you should reply "I cannot search the internet".
 """
 
 
